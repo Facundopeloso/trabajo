@@ -62,6 +62,7 @@ nav h2{
 }
 
 #contenido h1{
+  color: #2b5dba;
     font-size: 20px;
     margin-top: 50px;
     margin-left: 50px;
@@ -69,14 +70,15 @@ nav h2{
 }
 
 #contenido img{
-    display: flex;
-	width: 80px;
-    height: 80px;
+    display: block;
+    width: 200px;
+    height: 150px;
     float: left;
     margin-left: 50px;
 }
 
 #contenido tex{
+  
 float: left;
 margin-top: 200x;
 margin-left: 50px;
@@ -123,7 +125,7 @@ aside h2{
 footer{
  
     clear: both;
-    color: #595cb6
+    color: #5b5ec2
 }
 
 #invi-btn:focus{
