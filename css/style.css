@@ -19,6 +19,11 @@ body{
     background: #ffffff;
 }
 
+header img{
+ display: block;
+  margin: auto;
+  width: 100%;
+}
 
 header{
     height: 150px;
@@ -26,7 +31,7 @@ header{
 }
 
 header h2{
-    font-size: 50px;
+    font-size: 12pt;
     text-align: center;
     line-height: 150px;
 }
@@ -34,6 +39,8 @@ header h2{
 nav{
     background: blue;
     height: 30px;
+    width: 100%;
+    margin: auto;
 
 }
 
@@ -91,11 +98,12 @@ aside h2{
 
 }
 
-.botones-headear{
+#botones-headear{
 
     float:right;
-    margin-top: 0px;
-    font-size: 5px;
+    margin-top: 10px;
+    margin-right: 4px;
+    font-display: auto;
 
 
 }
@@ -108,7 +116,7 @@ aside h2{
 
 
 #boton-derecha{
-    margin-left: 100px;
+    margin-left: 300px;
     float: left;
 
 }
@@ -119,6 +127,10 @@ footer{
     color: #595cb6
 }
 
+#invi-btn:focus{
+  outline: 0;
+  border: 0;
+}
 
 
 
