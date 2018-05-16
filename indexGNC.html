@@ -20,6 +20,7 @@
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 
   <!-- Custom fonts for this template -->
   <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
@@ -33,234 +34,122 @@
 </head>
 
 <body>
-  <style type="text/css">
-    #boton {
-      background: red;
-      float: right;
-      position: absolute;
-    }
-
-    img {
-      float: left;
-    }
-  </style>
 
 
-  <!-- Navigation -->
-  <style>
-    .navbar {
-      background-color: #4e4db3;
-    }
-
-    .navbar .navbar-brand {
-      color: #ecf0f1;
-    }
-
-    .navbar .navbar-brand:hover,
-    .navbar .navbar-brand:focus {
-      color: #ecdbff;
-    }
-
-    .navbar .navbar-text {
-      color: #ecf0f1;
-    }
-
-    .navbar .navbar-text a {
-      color: #ecdbff;
-    }
-
-    .navbar .navbar-text a:hover,
-    .navbar .navbar-text a:focus {
-      color: #ecdbff;
-    }
-
-    .navbar .navbar-nav .nav-link {
-      color: #ecf0f1;
-      border-radius: .25rem;
-      margin: 0 0.25em;
-    }
-
-    .navbar .navbar-nav .nav-link:not(.disabled):hover,
-    .navbar .navbar-nav .nav-link:not(.disabled):focus {
-      color: #ecdbff;
-    }
-
-    .navbar .navbar-nav .dropdown-menu {
-      background-color: #595cb6;
-      border-color: #4459ad;
-    }
-
-    .navbar .navbar-nav .dropdown-menu .dropdown-item {
-      color: #ecf0f1;
-    }
-
-    .navbar .navbar-nav .dropdown-menu .dropdown-item:hover,
-    .navbar .navbar-nav .dropdown-menu .dropdown-item:focus,
-    .navbar .navbar-nav .dropdown-menu .dropdown-item.active {
-      color: #ecdbff;
-      background-color: #4e44ad;
-    }
-
-    .navbar .navbar-nav .dropdown-menu .dropdown-divider {
-      border-top-color: #4447ad;
-    }
-
-    .navbar .navbar-nav .nav-item.active .nav-link,
-    .navbar .navbar-nav .nav-item.active .nav-link:hover,
-    .navbar .navbar-nav .nav-item.active .nav-link:focus,
-    .navbar .navbar-nav .nav-item.show .nav-link,
-    .navbar .navbar-nav .nav-item.show .nav-link:hover,
-    .navbar .navbar-nav .nav-item.show .nav-link:focus {
-      color: #ecdbff;
-      background-color: #8e44ad;
-    }
-
-    .navbar .navbar-toggle {
-      border-color: #8e44ad;
-    }
-
-    .navbar .navbar-toggle:hover,
-    .navbar .navbar-toggle:focus {
-      background-color: #8e44ad;
-    }
-
-    .navbar .navbar-toggle .navbar-toggler-icon {
-      color: #ecf0f1;
-    }
-
-    .navbar .navbar-collapse,
-    .navbar .navbar-form {
-      border-color: #ecf0f1;
-    }
-
-    .navbar .navbar-link {
-      color: #ecf0f1;
-    }
-
-    .navbar .navbar-link:hover {
-      color: #ecdbff;
-    }
-
-    @media (max-width: 575px) {
-      .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item {
-        color: #ecf0f1;
-      }
-      .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:hover,
-      .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:focus {
-        color: #ecdbff;
-      }
-      .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item.active {
-        color: #ecdbff;
-        background-color: #8e44ad;
-      }
-    }
-
-    @media (max-width: 767px) {
-      .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item {
-        color: #ecf0f1;
-      }
-      .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:hover,
-      .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:focus {
-        color: #ecdbff;
-      }
-      .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item.active {
-        color: #ecdbff;
-        background-color: #8e44ad;
-      }
-    }
-
-    @media (max-width: 991px) {
-      .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item {
-        color: #ecf0f1;
-      }
-      .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:hover,
-      .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:focus {
-        color: #ecdbff;
-      }
-      .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item.active {
-        color: #ecdbff;
-        background-color: #8e44ad;
-      }
-    }
-
-    @media (max-width: 1199px) {
-      .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item {
-        color: #ecf0f1;
-      }
-      .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:hover,
-      .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:focus {
-        color: #ecdbff;
-      }
-      .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item.active {
-        color: #ecdbff;
-        background-color: #8e44ad;
-      }
-    }
-
-    .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item {
-      color: #ffffff;
-    }
-
-    .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:hover,
-    .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:focus {
-      color: #ffffff;
-    }
-
-    .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item.active {
-      color: #ffffff;
-      background-color: #2b5dba;
-    }
-  </style>
-
-  <div>
+  <div id="contenedor">
     <header>
-      <div>
-        <div class="jumbotron text-center">
-          <img src="" alt="" srcset="">
-          <!--IMAGEN DE ENCABEZADO-->
-          <h5>IMAGEN</h5>
-          <!--BOTONES ARREGLAR-->
-          <a>
-            <button class="btn">Inicio</button>
-            <button class="btn">Inicio</button>
-            <button class="btn">Inicio</button>
-            <button class="btn">Inicio</button>
-          </a>
-        </div>
-      </div>
+      <h2>IMAGEN</h2>
+      <a>
+        <button class="botones-headear">INICIO</button>
+        <button class="botones-headear">NUESTRAS INSTALACIONES</button>
+        <button class="botones-headear">SERVICIOS</button>
+        <button class="botones-headear">NOVEDADES</button>
+        <button class="botones-headear">CONTACTOS</button>
+      </a>
     </header>
-
-
-    <nav class="navbar navbar-expand ">
-      <!--Barra de novedades-->
-      <div>
-        <div class="navbar-brand" href="#">Novedades</div>
-      </div>
+    <nav>
+      <h2>Novedades</h2>
     </nav>
 
 
+    <section id="contenido">
+      <article>
 
-    <section>
-      <!--IMAGEN DEL CUERPO-->
-      <img src="" alt="" srcset="">
-      <h5>Section1</h5>
-      <div>
-        <button class="button">Ver mas</button>
-      </div>
+        <div>
+            <br>
+            <h1>DOS RAMPAS</h1>
+            <img class="img-thumbnail" src="assets/img/bootstrap-stack.png" alt="article">
+            <tex> tiene capacidad para albergar
+              <strong>350 lanchas</strong>, que se distribuyen en una estructura metalica de varios pisos con camas especiales para
+              embarcaciones de hasta 20 pies y 6 de hasta 25 pies</tex>
+              <button id="boton-derecha" class="btn">Ver Mas</button>
+            </br>
+
+
+        </div>
+
+        <div>
+          <br>
+            <h2 id="titulo2">DOS RAMPAS</h2>
+            <img class="img-thumbnail" src="assets/img/bootstrap-stack.png" alt="article">
+            <tex> tiene capacidad para albergar
+              <strong>350 lanchas</strong>, que se distribuyen en una estructura metalica de varios pisos con camas especiales para
+              embarcaciones de hasta 20 pies y 6 de hasta 25 pies</tex>
+
+
+            </br>
+        </div>
+
+
+      </article>
     </section>
-    </div>
+
+    <aside>
+      <h2>ENTRADAS</h2>
+    </aside>
+
+    <footer >
+      <h2> PIE DE PAG</h2>
+    </footer>
+
+  </div>
 
 
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
