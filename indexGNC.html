@@ -5,14 +5,12 @@
   <title>Title</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <!-- Bootstrap CSS -->
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimun-scale=1.0"
+    <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
     crossorigin="anonymous">
 
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -21,92 +19,86 @@
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
-
-  <!-- Custom fonts for this template -->
-  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
-  <link href="css/one-page-wonder.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/one-page-wonder.min.css" </head>
+  <script src="js/dist/jquerry.js"></script>
+  <body>
 
 
-
-</head>
-
-<body>
-
-
-  <div id="contenedor">
-    <header>
-      <!--ENCABEZADO-->
-      <!--AGREGAR UN NAV PARA LOS BOTONES-->
-      <p>
-        <section>
-          <a>
-            <img src="assets/img/ENCABEZADO_1.jpg" alt="section">
-            <button id="botones-headear" type="button" class="btn btn-light">CONTACTOS</button>
-            <button id="botones-headear" type="button" class="btn btn-light">NOVEDADES</button>
-            <button id="botones-headear" type="button" class="btn btn-light">SERVICIOS</button>
-            <button id="botones-headear" type="button" class="btn btn-light">NUESTRAS INSTALACIONES</button>
-            <button id="botones-headear" type="button" class="btn btn-light">INCIO</button>
-        </section>
-
-        </a>
-
-
-      </p>
-    </header>
-
-
-    <!--BARRA DE NOVEDADES-->
-    <nav>
-      <h2>Novedades</h2>
-    </nav>
-
-
-    <section id="contenido">
-      <article>
-
-        <!--ARTICULO1-->
-        <h1>DOS RAMPAS</h1>
+    <div id="contenedor">
+      <header>
+        <!--ENCABEZADO-->
+        <!--AGREGAR UN NAV PARA LOS BOTONES-->
         <div>
-          <br>
-          <img class="img-thumbnail" src="assets/img/Articulo_1.jpg" alt="article">
+            <img class="auto"  src="assets/img/ENCABEZADO_1.jpg" alt="section">
+            <ul class="nav navbar-nav">
+                <li><a href="#">INICIO</a></li>
+                <li><a href="#">NUESTRAS INSTALACIONES</a></li>
+                <li><a href="#">SERVICIOS</a></li>
+                <li class="active"><a href="#">NOVEDADES</a></li>
+                <li><a href="#">CONTACTO</a></li>
+              </ul>
+            </div>
+
+            
+        <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+          
+          <div class="container">
+            <div class="nav-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion-fm">            
+              </button>
+              <a href="#" class="navbar-brand">Novedades</a>
+
+            </div>
+            
+          </div>
+        </nav>
+       
+      </header>
+
+
+      <section id="contenido">
+        <article>
+
+          <!--ARTICULO1-->
+          <h1>DOS RAMPAS</h1>
+          <div>
+            <br>
+            <img class="img-thumbnail" src="assets/img/Articulo_1.jpg" alt="article">
+            <tex> tiene capacidad para albergar
+              <strong>350 lanchas</strong>, que se distribuyen en una estructura metalica de varios pisos con camas especiales para
+              embarcaciones de hasta 20 pies y 6 de hasta 25 pies</tex>
+            <p>
+              <button id="boton-derecha" class="btn">Ver Mas</button>
+            </p>
+            </br>
+          </div>
+
+          <!--ARTICULO2-->
+
+          <h2 id="titulo2">DOS RAMPAS</h2>
+          <div>
+            <br>
+            <img class="img-thumbnail" src="assets/img/Articulo_2.jpg" alt="article">
+            </br>
+          </div>
           <tex> tiene capacidad para albergar
             <strong>350 lanchas</strong>, que se distribuyen en una estructura metalica de varios pisos con camas especiales para
             embarcaciones de hasta 20 pies y 6 de hasta 25 pies</tex>
-          <p>
-            <button id="boton-derecha" class="btn">Ver Mas</button>
-          </p>
-          </br>
-        </div>
+          <button id="boton-derecha" class="btn">Ver Mas</button>
+        </article>
+      </section>
 
-        <!--ARTICULO2-->
+      <aside>
+        <!--SECTION EN DUDA-->
+        <h2>ENTRADAS</h2>
+      </aside>
 
-        <h2 id="titulo2">DOS RAMPAS</h2>
-        <div>
-          <br>
-          <img class="img-thumbnail" src="assets/img/Articulo_2.jpg" alt="article">
-          </br>
-        </div>
-        <tex> tiene capacidad para albergar
-          <strong>350 lanchas</strong>, que se distribuyen en una estructura metalica de varios pisos con camas especiales para embarcaciones
-          de hasta 20 pies y 6 de hasta 25 pies</tex>
-        <button id="boton-derecha" class="btn">Ver Mas</button>
-      </article>
-    </section>
+      <!--PIE DE PAGINA-->
+      <footer>
+        <h2> </h2>
+      </footer>
 
-    <aside>
-      <!--SECTION EN DUDA-->
-      <h2>ENTRADAS</h2>
-    </aside>
-
-    <!--PIE DE PAGINA-->
-    <footer>
-      <h2> </h2>
-    </footer>
-
-  </div>
+    </div>
 
 
 
@@ -155,14 +147,14 @@
 
 
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-</body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+  </body>
 
 </html>
