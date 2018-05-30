@@ -5,7 +5,7 @@
 
 .navbar-dark .navbar-nav .nav-link {
    color: #ffffff !important;
-   
+
 }
  #seccion-inicio{
   /*background: url("../assets/img/ENCABEZADO_1.jpg;");*/
@@ -16,21 +16,15 @@
 
 
 
-<<<<<<< HEAD
 .navbar  {
   background-color: blue;
   opacity: 0.8;
-=======
-.navbar {
-
-  opacity: 0.6;
- 
->>>>>>> ce332ac068ffd39c4058cbf30fcc4d4723851085
 
 
 }
 .btn{
   color: white;
+  font-size: 15px;
   background-color: red;
 }
 
@@ -42,12 +36,10 @@
   background-size: cover;
   height:  4000px;
   width: 6000px;
-  
 }
 
 section a h2{
 margin-top: 20px;
-float: right;
 }
 .navbar-brand{
   color: #ffffff;
@@ -67,4 +59,8 @@ float: left;
   font-size:10;
   text-decoration: none;
   line-height: 20px;
+  margin-left: 10px;
+  }
+  section img{
+    margin-left: 10px;
   }
